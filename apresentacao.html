@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Apresentação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/present.css'>
+    
+</head>
+<body>
+        <div style="color:aliceblue"><h1 style="text-align: center;">História</h1></div>
+        <img src="img/apresentacao.jpeg" id="btn">
+        <div id="modal"><img src="img/present.png" id="imgmodal"></div>
+        <div style="color:aliceblue"><h1 style="text-align: center;">Click no botão esquerdo do Mouse
+        </h1></div>
+        <script>
+        var btn = document.querySelector("#btn");
+            btn.addEventListener("click",btnHandler,false);
+
+        function btnHandler(){
+            var modal = document.querySelector("#modal");
+                modal.style.zIndex = 2;
+                modal.style.opacity = 1;
+                modal.addEventListener("click",modalHandler,false);
+        }
+
+        function modalHandler(){
+        this.style.zIndex = -2;
+        this.style.opacity = 0;
+        this.removeEventListener("click",window.location.href = "mapa.html",false);
+        }
+        </script>
+</body>
+</html>

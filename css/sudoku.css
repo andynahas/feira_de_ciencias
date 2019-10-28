@@ -1,0 +1,51 @@
+
+
+table{border:5px solid black;}
+body{ background: url(../img/fundo.jpeg); background-size: 100%;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#Reset, #go{width: 90px; height: 40px; font-size: 25px;}
+
+
+td
+{
+	
+	text-align: center;
+	vertical-align: middle;
+	height: 40px;
+	width: 40px;
+}
+
+input
+{
+	color: black;
+	width: 45px;
+	height:45px;
+	font-size: 25px; 
+	text-align: center;
+	outline: none !important;
+	margin:0 !important;
+}
+
+
+tr:first-child(), tr:last-child 
+{border-top:5px solid black;}
+
+tr:nth-child(3n)
+{border-top: 5px solid red;}
+
+tr:last-child{border-right: none;}
+
+
+
+
+td:first-child() td:last-child
+{border-left:5px solid;}
+
+td:nth-child(3n)
+{border-right:5px solid red;}
+
+td:last-child{border-right: none;}

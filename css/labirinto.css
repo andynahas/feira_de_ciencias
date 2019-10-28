@@ -11,7 +11,7 @@ body{
 }
 canvas{
     
-    background-image: url("../img/cenario.jpeg");
+    background-color: rgb(98, 18, 18);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;

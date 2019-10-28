@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sudoku</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/sudoku.css">
+	<script src="js/sudoku.js"></script>
+	
+</head>
+
+<body>
+		<div style="color:aliceblue"><h1 style="text-align: center;">Sudoku</h1></div>
+	<center>
+		<form>
+	<table id="tabela">
+		<tr>
+			<td><input type="text" maxlength="1" id="c1" ></td>
+			<td><input type="text" value="4" disabled id="c2"></td>
+			<td><input type="text" maxlength="1" id="c3"></td>
+
+			<td><input type="text" value="2" disabled id="c4"></td>
+			<td><input type="text" maxlength="1" id="c5"></td>
+			<td><input type="text" value="7" disabled id="c6"></td>
+
+			<td><input type="text" maxlength="1" id="c7"> </td>
+			<td><input type="text" value="5" disabled id="c8"></td>
+			<td><input type="text" maxlength="1" id="c9"></td>
+		</tr>
+		<tr>
+			<td ><input type="text" maxlength="1" id="c10"></td>
+			<td ><input type="text" maxlength="1" id="c11"></td>
+			<td ><input type="text" maxlength="1" id="c12"></td>
+
+			<td ><input type="text" maxlength="1" id="c13"></td>
+			<td ><input type="text" maxlength="1" id="c14"></td>
+			<td ><input type="text" maxlength="1" id="c15"></td>
+
+			<td ><input type="text" maxlength="1" id="c16"></td>
+			<td ><input type="text" maxlength="1" id="c17"></td>
+			<td ><input type="text" maxlength="1" id="c18"></td>
+		</tr>
+		<tr>
+			<td ><input type="text" maxlength="1" id="c19"></td>
+			<td ><input type="text" maxlength="1" id="c20"></td>
+			<td ><input type="text" maxlength="1" id="c21" value="2" disabled></td>
+
+			<td ><input type="text" maxlength="1" id="c22" value="1" disabled></td>
+			<td ><input type="text" maxlength="1" id="c23"></td>
+			<td ><input type="text" maxlength="1" id="c24" value="5" disabled></td>
+
+			<td ><input type="text" maxlength="1" id="c25" value="3" disabled></td>
+			<td ><input type="text" maxlength="1" id="c26"></td>
+			<td ><input type="text" maxlength="1" id="c27"></td>
+		</tr>
+		<tr>
+			<td ><input type="text" maxlength="1" id="c28" value="1" disabled></td>
+			<td ><input type="text" maxlength="1" id="c29" value="8" disabled></td>
+			<td ><input type="text" maxlength="1" id="c30"></td>
+
+			<td><input type="text" maxlength="1" id="c31"></td>
+			<td><input type="text" maxlength="1" value="2" disabled id="c32"></td>
+			<td><input type="text" maxlength="1" id="c33"></td>
+
+			<td><input type="text" maxlength="1" id="c34"></td>
+			<td><input type="text" maxlength="1" value="9" disabled id="c35"></td>
+			<td><input type="text" maxlength="1" value="6" disabled id="c36"></td>
+		</tr>
+		<tr>
+			<td><input type="text" maxlength="1" id="c37"></td>
+			<td><input type="text" maxlength="1" value="6" disabled id="c38"></td>
+			<td><input type="text" maxlength="1" id="c39"></td>
+
+			<td><input type="text" maxlength="1" value="4" disabled id="c40"></td>
+			<td><input type="text" maxlength="1" id="c41"></td>
+			<td><input type="text" maxlength="1" value="9" disabled id="c42"></td>
+
+			<td><input type="text" maxlength="1" id="c43"></td>
+			<td><input type="text" maxlength="1" value="7" disabled id="c44"></td>
+			<td><input type="text" maxlength="1" id="c45"></td>
+		</tr>
+		<tr>
+			<td><input type="text" maxlength="1" value="9" disabled id="c46"></td>
+			<td><input type="text" maxlength="1" value="7" disabled id="c47"></td>
+			<td><input type="text" maxlength="1" id="c48"></td>
+
+			<td><input type="text" maxlength="1" id="c49"></td>
+			<td><input type="text" maxlength="1" value="6" disabled id="c50"></td>
+			<td><input type="text" maxlength="1" id="c51"></td>
+
+			<td><input type="text" maxlength="1" id="c52"></td>
+			<td><input type="text" maxlength="1" value="3" disabled id="c53"></td>
+			<td><input type="text" maxlength="1" value="8" disabled id="c54"></td>
+		</tr>
+		<tr>
+			<td><input type="text" maxlength="1" id="c55"></td>
+			<td><input type="text" maxlength="1" id="c56"></td>
+			<td><input type="text" maxlength="1" value="1" disabled id="c57"></td>
+
+			<td><input type="text" maxlength="1" value="9" disabled id="c58"></td>
+			<td><input type="text" maxlength="1" id="c59"></td>
+			<td><input type="text" maxlength="1" value="2" disabled id="c60"></td>
+
+			<td><input type="text" maxlength="1" value="6" disabled id="c61"></td>
+			<td><input type="text" maxlength="1" id="c62"></td>
+			<td><input type="text" maxlength="1" id="c63"></td>
+		</tr>
+		<tr>
+			<td><input type="text" maxlength="1" id="c64"></td>
+			<td><input type="text" maxlength="1" id="c65"></td>
+			<td><input type="text" maxlength="1" id="c66"></td>
+
+			<td><input type="text" maxlength="1" id="c67"></td>
+			<td><input type="text" maxlength="1" id="c68"></td>
+			<td><input type="text" maxlength="1" id="c69"></td>
+
+			<td><input type="text" maxlength="1" id="c70"></td>
+			<td><input type="text" maxlength="1" id="c71"></td>
+			<td><input type="text" maxlength="1" id="c72"></td>
+		</tr>
+		<tr>
+			<td><input type="text" maxlength="1" id="c73"></td>
+			<td><input type="text" maxlength="1" value="3" disabled id="c74"></td>
+			<td><input type="text" maxlength="1" id="c75"></td>
+
+			<td><input type="text" maxlength="1" value="6" disabled id="c76"></td>
+			<td><input type="text" maxlength="1" id="c77"></td>
+			<td><input type="text" maxlength="1" value="8" disabled id="c78"></td>
+
+			<td><input type="text" maxlength="1" id="c79"></td>
+			<td><input type="text" maxlength="1" value="4" disabled id="c80"></td>
+			<td><input type="text" maxlength="1" id="c81"></td>
+		</tr>
+
+	</table>
+	</center>
+	<br>
+	<br>
+	<center>
+	<input type="reset" value="Reset" id="Reset">
+	<input type="button" id="go" onclick="sudoku()" value="GO!" >
+	</center>
+	</form>
+</body>
+</html>
